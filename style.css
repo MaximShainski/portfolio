@@ -1,0 +1,72 @@
+
+body {
+    background-color: #0a0e1a; /* Dark background color for the body */
+    color: #e3f2fd; /* Light text color for the body */
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 100%
+}
+.section-heading {
+    margin-bottom: 40px;
+    color: #64b5f6; /* Blue heading colour for contrast with background */
+}
+.case-study-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Slightly rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Stronger shadow for dark background */
+}
+
+p.lead{
+    font-size:1.2rem /* Font will be 1.2 times the default screen font */
+}
+
+h2.section-heading{
+    font-size:3rem /*Headings will be 3 times the default screen font */
+}
+
+.navbar {
+    background-color: rgba(10, 14, 26, 0.8); /* Semi-transparent dark background */
+    position: fixed; /* Ensures it stays fixed at the top */
+    width: 100%;     /* Ensures it spans the full width */
+    top: 0;          /* Positions it at the very top */
+}
+
+/* Style for the regular navbar links (Home, About, How I Work, etc.) */
+.navbar-nav .nav-link {
+    color: #64b5f6;
+}
+
+/* Style for active/hover states */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #ffff; /* White for hover*/
+}
+
+/* Full-screen section styling - NO height adjustment for navbar */
+.full-screen-section {
+    min-height: 100vh; /* Sections will take 100% of the screen */
+    padding-right: 0rem;
+    
+    /* Flexbox for vertical centering of content within the section */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    flex-direction: column; /* Stack content (like heading, image, text) vertically */
+}
+/*specifically for the introduction section, move text a bit away from the left side*/
+.introduction-section {
+    min-height: 100vh; /* Sections will take 100% of the screen */
+    padding-left: 12rem; /* Keeps text away from the left edge */
+    padding-right: 0rem;
+    
+    /* Flexbox for vertical centering of content within the section */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    flex-direction: column; /* Stack content (like heading, image, text) vertically */
+}
+
+/* Content inside bootstraps grid takes full length of the grid */
+.full-screen-section .row {
+    width: 100%;
+}
